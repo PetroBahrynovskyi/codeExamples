@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+.sidebar{
+    width: 25vw;
+    border-right: 2px solid lightgray;
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+.sidebar h1{
+    display: inline-block;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.choose__name{
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 3px;
+    width: 200px;
+    border-bottom: 1px solid grey;
+}
+
+.choose__text-size{
+    margin-top: 1vh;
+    display: flex;
+    gap: 1vw;
+}
+
+.actual-range{
+    margin-left: 3vw;
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 10px;
+}
+.choose__text-font select{
+    width: 10vw;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 14px;
+}
+
+.choose__text-style{
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    max-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vw;
+}
+.choose__text-color,.choose__bg-color{
+    margin-left: 2vw;
+}
+.choose__text-color input, .choose__bg-color input {
+    width: 120px;
+}
+.main{
+    width: 75vw;
+}
+.main p:first-child {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    margin-left: 5vw;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.main textarea{
+    width: 100%;
+    height: 140px;
+    border: 1px solid lightblue;
+    border-left: none;
+}
+.main textarea:focus{
+    outline: none;
+}
+.submit_text button{
+    width: 100px;
+    display: block;
+    padding: 10px 5px;
+    margin: 10px auto;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: .4s;
+}
+.submit_text button:hover{
+    color: white;
+    background-color: blue;
+}
+
+.show-text{
+    word-wrap: break-word;
+    width: 95%;
+    padding-left: 15px;
+    margin-top: 20px;
+}

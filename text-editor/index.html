@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site Constructor</title>
+</head>
+<body>
+<div class="wrapper">
+    <aside class="sidebar choose">
+        <h1>Choose appropriate styles</h1>
+        
+        <p class="choose__name">Font Size</p>
+        <div class="choose__text-size">
+            <div class="left-range">0</div>
+            <input class="" type="range" min="0" max="100" value="20" step="1">
+            <div class="right-range">100</div>
+            <div class="actual-range">20</div>
+        </div>
+        <p class="choose__name">Font Family</p>
+        <div class="choose__text-font">
+            <select name="font-family" id="font-family">
+                <option value="'Times New Roman', Times, serif">Times New Roman</option>
+                <option value="'Courier New', Courier, monospace">Courier New</option>
+                <option value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Franklin Gothic Medium</option>
+                <option value="'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Gill Sans</option>
+                <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Segoe UI</option>
+                <option value="Arial, Helvetica, sans-serif">Arial</option>
+                <option value="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Cambria</option>
+                <option value="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Impact</option>
+                <option value="Verdana, Geneva, Tahoma, sans-serif">Verdana</option>
+            </select>
+        </div>
+        <p class="choose__name">Font Style</p>
+        <div class="choose__text-style">
+            <div>
+                <input type="checkbox" id="bold" name="bold">
+                <label for="bold">Bold</label>
+            </div>
+            <div>
+                <input type="checkbox" id="italic" name="italic">
+                <label for="italic">Italic</label>
+            </div>
+            <div>
+                <input type="checkbox" id="none" name="none">
+                <label for="none" >None</label>
+            </div>
+        </div>
+        <p class="choose__name">Text Color</p>
+        <div class="choose__text-color">
+            <input type="color"  id="text-color" name="text-color" value="#000000">
+        </div>
+        <p class="choose__name">Background Color</p>
+        <div class="choose__bg-color">
+            <input type="color"  id="background-color" name="background-color" value="#FFFFFF">
+        </div>
+        
+    </aside>
+    <div class="main">
+        <p class="p_put-text">Put your text here: </p>
+        <p><textarea name="text" class="written-text"></textarea></p>
+        <p class="submit_text"><button>Show</button></p>
+        <div class="show-text"></div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

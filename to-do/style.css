@@ -1,0 +1,107 @@
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 100vw;
+    min-height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    background: lightgray;
+    background-size: cover;
+}
+.wrapper h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: royalblue;
+}
+.todo-wrapper {
+    margin: 0 auto;
+    
+}
+
+.todo-list {
+    display: block;
+    margin-top: 5vh;
+    list-style: none;
+}
+.todo-item-create{
+    border: 1px solid lightsalmon;
+    background-color: rgba(233, 31,17, .5);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 40vw;
+    padding: 0vh 2vw;
+    min-height: 7vh;
+    max-height: 10vh;
+}
+.todo-item {
+    border: 1px solid lightsalmon;
+    background-color: rgba(233, 31,17, .5);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 40vw;
+    padding: 0vh 2vw;
+    height: auto;
+    min-height: 7vh;
+    max-height: 10vh;
+}
+
+.todo-item__newitem{
+    width: 310vw;
+}
+.todo-item__text{
+    padding-top: 2vh;
+}
+.todo-item__text > input,
+.todo-item__text > input:focus,
+.todo-item__text > input:active,
+.newInput {
+    margin-left: 1vw;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 25vw;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-bottom:  5vh;
+
+}
+
+.todo-item__icons button{
+    margin-left: 1vw;
+    border-radius:50%;
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+}
+.todo-item__icons button:hover{
+    filter:invert();
+}
+
+
+/* JS classes */
+
+.hide {
+    display: none;
+}
